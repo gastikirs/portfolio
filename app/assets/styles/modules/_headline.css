@@ -1,0 +1,13 @@
+.headline {
+
+	font-weight: 500;
+
+	&--centered {
+		text-align: center;
+	}
+
+	&--gold {
+		color: $gold;
+	}
+
+}

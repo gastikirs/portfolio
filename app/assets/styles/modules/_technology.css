@@ -1,0 +1,15 @@
+.technology {
+	
+	position: relative;
+	text-align: center;
+
+	&__title {
+		color: $gold;
+	}
+
+	p {
+		font-weight: 200;
+		text-align: center;
+
+	}
+}

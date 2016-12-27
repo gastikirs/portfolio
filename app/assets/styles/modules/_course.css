@@ -1,10 +1,17 @@
 .course {
 	padding: 1rem 1rem;
-	background-color: $mainGrey;
 	height: auto;
 	text-align: center;
 	
 	margin-right: 15px;
+
+	&__content {
+		background-color: #FFF;
+		border: 1px solid $mainBlack;
+		padding: 1rem 0;
+		border-radius: 0 0 1rem 1rem;
+
+	}
 
 	&__name {
 		font-size: 1rem;
@@ -13,6 +20,11 @@
 
 	&__description {
 		font-size: .8rem;
+	}
+
+	&__image{
+		border-radius: 2rem 2rem 0 0;
+		display: block;
 	}
 
 }

@@ -14,10 +14,14 @@
 
 	&__title {
 		margin: 0;
-		font-size: 1.5rem;
+		font-size: .8rem;
 
 		@mixin atSmall {
-			font-size: 3.5rem;
+			font-size: 1.5rem;
+		}
+
+		@mixin atMedium {
+			font-size: 2.8rem;
 		}
 		
 	}
@@ -28,10 +32,14 @@
 		margin-left: auto;
 		margin-right: auto;
 		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
-		font-size: .875rem;
+		font-size: .5rem;
 
 		@mixin atSmall {
-			font-size: 2rem;
+			font-size: .85rem;
+		}
+
+		@mixin atMedium {
+			font-size: 1.5rem;
 		}
 	}
 

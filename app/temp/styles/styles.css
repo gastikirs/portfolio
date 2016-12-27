@@ -463,6 +463,7 @@ template {
 body{
 	font-family: 'Roboto', sans-serif;
 	color: #444;
+	background-color: #f7f7f7;
 }
 
 img{
@@ -483,6 +484,10 @@ a:hover{
 	color: #CD5C5C;
 }
 
+.site-header{
+	background-color: #fff;
+}
+
 .wrapper {
 	overflow: hidden;
 	padding-left: 18px;
@@ -490,18 +495,24 @@ a:hover{
 	max-width: 1236px;
 	margin-right: auto;
 	margin-left: auto;
+
 }
 
 .page-section {
 	padding: 1.2rem 0;
 }
 
-.page-section--grey {
-  background-color: #f7f7f7;
+.page-section--jumbo {
+  padding: 0;
 }
 
-.page-section--jumbo {
-  padding-bottom: 0;
+.page-section--blue {
+  background-color: #2f5572;
+  color: white;
+}
+
+.page-section--b-margin {
+  margin-bottom: 2rem;
 }
 
 .jumbo {
@@ -522,13 +533,20 @@ a:hover{
 
 .jumbo__title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: .8rem;
 }
 
 @media (min-width: 530px) {
 
   .jumbo__title {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .jumbo__title {
+    font-size: 2.8rem;
   }
 }
 
@@ -538,13 +556,20 @@ a:hover{
   margin-left: auto;
   margin-right: auto;
   text-shadow: 2px 2px 0 rgba(0,0,0, .1);
-  font-size: .875rem;
+  font-size: .5rem;
 }
 
 @media (min-width: 530px) {
 
   .jumbo__subtitle {
-    font-size: 2rem;
+    font-size: .85rem;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .jumbo__subtitle {
+    font-size: 1.5rem;
   }
 }
 
@@ -572,12 +597,18 @@ a:hover{
 
 .course {
 	padding: 1rem 1rem;
-	background-color: #f7f7f7;
 	height: auto;
 	text-align: center;
 	
 	margin-right: 15px;
 
+}
+
+.course__content {
+  background-color: #FFF;
+  border: 1px solid #444;
+  padding: 1rem 0;
+  border-radius: 0 0 1rem 1rem;
 }
 
 .course__name {
@@ -586,6 +617,17 @@ a:hover{
 
 .course__description {
   font-size: .8rem;
+}
+
+.course__image{
+  border-radius: 2rem 2rem 0 0;
+  display: block;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .row--gutters > div {
@@ -602,4 +644,74 @@ a:hover{
     float: left;
     width: 33.33%;
   }
+}
+
+@media (min-width: 800px) {
+
+  .row__medium-6 {
+    float: left;
+    width: 50%;
+  }
+}
+
+.headline {
+
+	font-weight: 500;
+
+}
+
+.headline--centered {
+  text-align: center;
+}
+
+.headline--gold {
+  color: #FFDF00;
+}
+
+.default-text p {
+  font-weight: 200;
+}
+
+.technology {
+	
+	position: relative;
+	text-align: center;
+}
+
+.technology__title {
+  color: #FFDF00;
+}
+
+.technology p {
+  font-weight: 200;
+  text-align: center;
+}
+
+.contact {
+	
+	text-align: center;
+}
+
+.contact__form{
+  display: none;
+}
+
+.contact label {
+  font-size: 1.2rem;
+}
+
+.contact input {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1.5rem;
+  padding: .3rem;
+  border-radius: .3rem;
+}
+
+.contact input:focus {
+  outline-color: #2f5572;
+}
+
+.icon--paper-plane {
+  font-size: 2rem;
 }

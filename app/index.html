@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Gaston Kirsman</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
@@ -36,33 +37,39 @@
 		</div>
 	</div>
 
-	<div id="courses" class="page-section">
+	<div id="courses" class="page-section page-section--b-margin">
 		<div class="wrapper">
-			<h1 class="">Recently finished courses</h1>
+			<h1 class="headline headline--centered">Recently taken courses</h1>
 
 				<div class="row row-gutters">
 
 					<div class="row__medium-4">
 						<div class="course">
-							<img src="assets/images/webmaster-git-course.png" alt="Git a Web Developer Job">
-							<h1 class="course__name">Git a WebMaster - Workflow</h1>
-							<p class="course__description">One of the best courses that I've ever taken</p>
+							<img src="assets/images/webmaster-git-course.png" alt="Git a Web Developer Job" class="course__image">
+							<div class="course__content">
+								<h1 class="course__name">Git a WebMaster - Workflow</h1>
+								<p class="course__description">One of the best courses that I've ever taken</p>
+							</div>
 						</div>
 					</div>
 					
 					<div class="row__medium-4">
 						<div class="course">
-							<img src="assets/images/webmaster-git-course.png" alt="Git a Web Developer Job">
-							<h1 class="course__name">Git a WebMaster - Workflow</h1>
-							<p class="course__description">One of the best courses that I've ever taken</p>
+							<img src="assets/images/react-course.png" alt="Git a Web Developer Job" class="course__image">
+							<div class="course__content">
+								<h1 class="course__name">React Web App Developer Course</h1>
+								<p class="course__description">Complete React Course taken via Udemy</p>
+							</div>
 						</div>
 					</div>
 
 					<div class="row__medium-4">
 						<div class="course course--last">
-							<img src="assets/images/webmaster-git-course.png" alt="Git a Web Developer Job">
-							<h1 class="course__name">Git a WebMaster - Workflow</h1>
-							<p class="course__description">One of the best courses that I've ever taken</p>
+							<img src="assets/images/ecma-course.png" alt="Git a Web Developer Job" class="course__image">
+							<div class="course__content">
+								<h1 class="course__name">ECMAScript 2015</h1>
+								<p class="course__description">Thanks to Acamica</p>
+							</div>
 						</div>
 					</div>
 
@@ -70,22 +77,65 @@
 
 			</div> <!-- Wrapper -->
 			
+		</div> <!-- Courses -->
+
+		<div id="about-me" class="page-section page-section--blue">
+			<div class="wrapper">
+				<h1 class="headline headline--centered headline--gold">About me</h1>
+				<div class="default-text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, maxime ea error? Veritatis, ipsum, reprehenderit. Praesentium quae odio qui, excepturi quo eligendi, ad pariatur obcaecati officia accusamus voluptatum, dignissimos. Alias!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur deleniti aliquam, cum reiciendis molestias magnam magni quas laudantium accusantium quibusdam enim ad unde iure omnis eum rem possimus sapiente eaque.</p>
+				</div>
+
+				<div class="row row-gutters">
+					<div class="row__medium-6">
+						<div class="technology">
+							<h2 class="technology__title">Javascript</h2>
+							<p>Javascript: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum accusamus, odit. Quibusdam, optio, illum. Sed ratione qui delectus eligendi molestias id explicabo mollitia placeat, tempore accusantium facilis quod rem quis.</p>
+						</div>
+
+						<div class="technology">
+							<h2 class="technology__title">HTML</h2>
+							<p>Javascript: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum accusamus, odit. Quibusdam, optio, illum. Sed ratione qui delectus eligendi molestias id explicabo mollitia placeat, tempore accusantium facilis quod rem quis.</p>
+						</div>
+					</div>
+
+					<div class="row__medium-6">
+						<div class="technology">
+							<h2 class="technology__title">CSS</h2>
+							<p>Javascript: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum accusamus, odit. Quibusdam, optio, illum. Sed ratione qui delectus eligendi molestias id explicabo mollitia placeat, tempore accusantium facilis quod rem quis.</p>
+						</div>
+
+						<div class="technology">
+							<h2 class="technology__title">And more!</h2>
+							<p>Javascript: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum accusamus, odit. Quibusdam, optio, illum. Sed ratione qui delectus eligendi molestias id explicabo mollitia placeat, tempore accusantium facilis quod rem quis.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- wrapper -->
+
+
+		</div> <!-- about me -->
+
+		<div id="contact" class="contact page-section">
+			<div class="wrapper wrapper--center">
+				<h1 class="headline">Contact me :)</h1>
+				<i class="icon icon--paper-plane fa fa-paper-plane" aria-hidden="true"></i>
+				<div class="contact__form">
+
+					<label for="name">Name</label>
+					<input type="text" id="name">
+					
+					<label for="surename">Surename</label>
+					<input type="text" id="surename">
+
+					<label for="msg">Message</label>
+					<input type="text" id="msg">
+
+					<button class="btn btn--blue">Submit</button>
+				</div>
+			</div>
 		</div>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi totam, inventore eligendi accusamus blanditiis minus, sunt dignissimos consequuntur, eius officiis facilis quae! Possimus eaque incidunt nulla, quasi quibusdam. Aut, soluta.</p>
-
-
-	</div>
 
 </body>
 </html>

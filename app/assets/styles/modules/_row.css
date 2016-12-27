@@ -1,5 +1,7 @@
 .row {
 
+	@mixin clearfix;
+
 	&--gutters > div {
 		padding-right: 65px;
 	}
@@ -15,6 +17,14 @@
 			width: 33.33%
 		}
 
+	}
+
+	&__medium-6 {
+
+		@mixin atMedium {
+			float: left;
+			width: 50%;
+		}
 	}
 	
 }

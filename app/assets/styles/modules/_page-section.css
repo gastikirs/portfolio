@@ -1,11 +1,16 @@
 .page-section {
 	padding: 1.2rem 0;
 
-	&--grey {
-		background-color: $mainGrey;
+	&--jumbo {
+		padding: 0;
 	}
 
-	&--jumbo {
-		padding-bottom: 0;
+	&--blue {
+		background-color: $mainBlue;
+		color: white;
+	}
+
+	&--b-margin {
+		margin-bottom: 2rem;
 	}
 }
