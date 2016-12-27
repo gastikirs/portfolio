@@ -1,0 +1,11 @@
+.jumbo {
+	text-align: center;
+	border-bottom: .2rem solid $mainBlue;
+
+	&__subtitle{
+		font-weight: 300;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

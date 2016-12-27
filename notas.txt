@@ -1,0 +1,28 @@
+- Agregar margen solido con color al jumbo
+- Darle un max width al contenido para que en pantallas grandes no se extienda demasiado (hacerlo en wrapper y centrarlo con margins de costados auto)
+- clase en comun para headlines (titulos) usar modificadores para personalizarlo
+- imagenes en mobile deben ocupar el 100% del width
+- Grid:
+	meter las cosas que van juntas en un div row
+	meter en divs separados las cosas que van en columnas separadas 
+	pensar como 12 columnas
+	las clases que contienen el contenido de cada columna tienen clase row__(x)
+	donde x es la cantidad de columnas que ocupan
+	a la row__x darle float left
+	Si cada columna ocupa 8.3% (12 es 100%), si una columna que ocupa 4 es 33.3% 
+	ej de una row__4 seria {
+		float: left
+		width: 33.33%
+	}
+
+	Si una row tiene como hijos 2 rows__x, voy a tener que hacer un clearfix luego
+
+	Se puede agregar un modificador como row--gutters para agregar un margen entre las columnas (le doy horizontal padding) pero se lo doy a los hijos directos.
+		ej: &--gutters > div  {
+			padding-right: xpx;
+		}
+	Para sacar el padding del ultimo elemento hay que darle al row padre un margen negativo de xpx (mismo que el padding-right) y hiddear el overflow del wrapper
+
+	Para pantallas chicas quiero que cada seccion use el 100% del width. O sea que no haya columnas para mobile. Para eso la clase que era row__4 y row__8 quiero que sean 100% para mobile.
+	entonces row__4 lo cambio a row__medium-4 eso quiere decir que solo se aplicara el row__medium-4 cuando la pantalla sea considerada al menos medium. Lo mismo con el row__8
+	

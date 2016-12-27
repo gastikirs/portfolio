@@ -1,0 +1,17 @@
+.btn {
+	padding: .8rem 1.5rem;
+	font-weight: 600;
+	color: #fff;
+	font-family: 'Roboto';
+	text-decoration: none;
+	border-style: none;
+	display: inline-block;
+
+	&--red {
+		background-color: $mainRed;
+	}
+
+	&--blue {
+		background-color: $mainBlue;
+	}
+}
