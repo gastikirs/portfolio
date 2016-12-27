@@ -1,9 +1,20 @@
 .row {
-	display: flex;
-	flex-wrap: wrap;
 
-	@mixin atMedium {
-		justify-content: space-around;
+	&--gutters > div {
+		padding-right: 65px;
+	}
+
+	&--gutters {
+		margin-right: -65px;
+	}
+
+	&__medium-4 {
+
+		@mixin atMedium {
+			float: left;
+			width: 33.33%
+		}
+
 	}
 	
 }

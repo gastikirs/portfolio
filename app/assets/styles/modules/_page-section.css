@@ -4,4 +4,8 @@
 	&--grey {
 		background-color: $mainGrey;
 	}
+
+	&--jumbo {
+		padding-bottom: 0;
+	}
 }

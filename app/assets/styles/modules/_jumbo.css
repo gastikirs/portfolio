@@ -1,11 +1,42 @@
 .jumbo {
+	border-bottom: .6rem solid $mainBlue;
+	color: #fff;
+	position: relative;
+
+	&__text-content {
 	text-align: center;
-	border-bottom: .2rem solid $mainBlue;
+	width: 100%;	
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+	}
+
+	&__title {
+		margin: 0;
+		font-size: 1.5rem;
+
+		@mixin atSmall {
+			font-size: 3.5rem;
+		}
+		
+	}
 
 	&__subtitle{
 		font-weight: 300;
 		max-width: 500px;
 		margin-left: auto;
 		margin-right: auto;
+		text-shadow: 2px 2px 0 rgba(0,0,0, .1);
+		font-size: .875rem;
+
+		@mixin atSmall {
+			font-size: 2rem;
+		}
 	}
+
+	&__image{
+		display: block;
+	}
+
 }
