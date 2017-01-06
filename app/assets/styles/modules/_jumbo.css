@@ -9,6 +9,11 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	padding-top: 2rem;
+
+	@mixin atMedium {
+		padding-top: 1rem;
+	}
 
 	}
 

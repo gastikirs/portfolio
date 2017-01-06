@@ -8,25 +8,36 @@
 	<link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
+
 	<header class="site-header">
 		<div class="wrapper">
 			<div class="site-header__logo">
-				<h2 class="site-header__title">Gaston Kirsman</h2>
-				<h3 class="site-header__subtitle">Developer & Student</h3>
+				<img class="site-header__image" src="assets/images/headerlogo.png">
 			</div>
-				<nav class="primary-nav primary-nav--pull-right">
-					<ul>
-						<li><a href="#about-me">About me</a></li>
-						<li><a href="#portfolio">Work Experience</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
+
+			<div class="site-header__menu-icon">
+				<div class="site-header__menu-icon__middle"></div>
+			</div>
+
+				<div class="site-header__menu-content">
+					<nav class="primary-nav primary-nav--pull-right">
+						<ul>
+							<li><a href="#about-me">About me</a></li>
+							<li><a href="#work-experience">Work Experience</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
 		</div>
 	</header>
 
 
 	<div class="jumbo page-section page-section--jumbo">
-		<img class="jumbo__image" src="assets/images/developerbg.jpeg" alt="">
+		<picture>
+			<source srcset="assets/images/jumbo--medium.png" media="(min-width:800px)">
+			<source srcset="assets/images/jumbo--small.png" media="(min-width:580px)">
+			<img class="jumbo__image" src="assets/images/jumbo--smaller.png" alt="">
+		</picture>
 		<div class="jumbo__text-content">
 			<div class="wrapper">
 				<h1 class="jumbo__title">Hello! <br>I am Gaston Kirsman</h1>
@@ -49,7 +60,7 @@
 							</picture>
 							<div class="work__content">
 								<h1 class="work__name">GDS Modellica</h1>
-								<p class="work__description">Present and future of web development!</p>
+								<p class="work__description">Worked as a developer</p>
 							</div>
 						</div>
 					</div>
@@ -59,7 +70,7 @@
 							<img src="assets/images/almashopping.png" alt="Git a Web Developer Job" class="work__image">
 							<div class="work__content">
 								<h1 class="work__name">AlmaShopping</h1>
-								<p class="work__description">Build websites. Style them!</p>
+								<p class="work__description">Webmaster of the site</p>
 							</div>
 						</div>
 					</div>
@@ -69,7 +80,7 @@
 							<img src="assets/images/growit.png" alt="Git a Web Developer Job" class="work__image">
 							<div class="work__content">
 								<h1 class="work__name">GrowIT</h1>
-								<p class="work__description">FB's new JS library for SPA.</p>
+								<p class="work__description">Developer and support. Worked with SugarCRM</p>
 							</div>
 						</div>
 					</div>
@@ -138,5 +149,6 @@
 			</div>
 		</div>
 
+		<script type="text/javascript" src="/temp/scripts/App.js"></script>
 </body>
 </html>

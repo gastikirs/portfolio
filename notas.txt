@@ -44,5 +44,7 @@ Se le da al parent div display:flex
 Y luego a cada div hay que darle float:none y que usen display:flex
 
 	
+HEADER:::
+
 
 
