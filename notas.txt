@@ -25,4 +25,24 @@
 
 	Para pantallas chicas quiero que cada seccion use el 100% del width. O sea que no haya columnas para mobile. Para eso la clase que era row__4 y row__8 quiero que sean 100% para mobile.
 	entonces row__4 lo cambio a row__medium-4 eso quiere decir que solo se aplicara el row__medium-4 cuando la pantalla sea considerada al menos medium. Lo mismo con el row__8
+
+Para trabajar con imagenes, para redondearlas con border-width
+siempre hay que darles una clase y establecer el width y heigh que tienen en la realidad.
+Para que sea redonda la imagen, el border radious debe ser la mitad del width o heigh
+ej: 
+si width : 160px
+border-width debe ser 80px  para que sea perfectamente redonda.
+
+Si a la imagen se la mueve con position relative y se le da un top, lo que viene luego
+no "sabe" que se movio y por lo tnato el contenido queda quieto. Para contrarestar esto hay
+que darle un margin-bottom negativo del mismo tamanio del top que se le dio
+
+Para que 3 divs tengan el mismo "height" usar flexbox
+Se le puede dar una clase al row padre (ej row--equal-height-at-medium) 
+o sea cuando la pantalla sea medium se va a aplicar una clase para que tengan el mismo height.
+Se le da al parent div display:flex
+Y luego a cada div hay que darle float:none y que usen display:flex
+
 	
+
+
