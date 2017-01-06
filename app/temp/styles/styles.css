@@ -597,16 +597,12 @@ a:hover{
 
 .course {
 	padding: 1rem 1rem;
-	height: auto;
 	text-align: center;
-	
-	margin-right: 15px;
+	border: 1px solid black;
 
 }
 
 .course__content {
-  background-color: #FFF;
-  border: 1px solid #444;
   padding: 1rem 0;
   border-radius: 0 0 1rem 1rem;
 }
@@ -652,6 +648,22 @@ a:hover{
     float: left;
     width: 50%;
   }
+}
+
+@media (min-width: 800px) {
+
+  .row--equal-height-at-medium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.row--equal-height-at-medium > div {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .headline {
