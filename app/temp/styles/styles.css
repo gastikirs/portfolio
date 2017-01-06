@@ -595,30 +595,28 @@ a:hover{
   background-color: #2f5572;
 }
 
-.course {
-	padding: 0 0 1rem 0;
+.work {
+	padding: 1rem;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 2rem 2rem 0 0;
-	overflow: hidden;
 
 }
 
-.course__content {
+.work__content {
   padding: 1rem 0;
   border-radius: 0 0 1rem 1rem;
 }
 
-.course__name {
+.work__name {
   font-size: 1rem;
 }
 
-.course__description {
+.work__description {
   font-size: .8rem;
 }
 
-.course__image{
+.work__image{
   display: block;
   border-bottom: 4px solid #2f5572;
 }
@@ -701,6 +699,14 @@ a:hover{
 .technology p {
   font-weight: 200;
   text-align: center;
+}
+
+.technology__icon {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: 7px;
+  margin-right: 3px;
 }
 
 .contact {

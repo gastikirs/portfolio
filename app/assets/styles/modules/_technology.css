@@ -12,4 +12,12 @@
 		text-align: center;
 
 	}
+
+	&__icon {
+		height: 35px;
+		width: 35px;
+		position: relative;
+		top: 7px;
+		margin-right: 3px;
+	}
 }
