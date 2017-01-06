@@ -1,6 +1,10 @@
 .course {
-	padding: 1rem 1rem;
+	padding: 0 0 1rem 0;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2rem 2rem 0 0;
+	overflow: hidden;
 
 
 	&__content {
@@ -20,8 +24,8 @@
 	}
 
 	&__image{
-		border-radius: 2rem 2rem 0 0;
 		display: block;
+		border-bottom: 4px solid $mainBlue;
 	}
 
 }
