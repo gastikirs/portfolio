@@ -38,6 +38,7 @@
 		
 		@mixin atMedium {
 			border-bottom: 4px solid $mainBlue;
+			margin: 0 auto;
 			display: block;
 		}
 	}
