@@ -27,6 +27,13 @@
 		}
 	}
 
+	&__medium-8 {
+		@mixin atMedium {
+			float: left;
+			width: 66.66%;
+		}
+	}
+
 	&--equal-height-at-medium {
 		@mixin atMedium {
 			display: flex;

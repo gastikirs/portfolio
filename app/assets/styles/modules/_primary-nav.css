@@ -42,5 +42,11 @@
 		&:hover {
 			color: $gold;
 		}
+
+		@mixin atMedium {
+			&.is-current-link {
+				color: #fabb69;
+			}
+		}
 	}
 }

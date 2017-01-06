@@ -22,9 +22,9 @@
 				<div class="site-header__menu-content">
 					<nav class="primary-nav primary-nav--pull-right">
 						<ul>
-							<li><a href="#about-me">About me</a></li>
-							<li><a href="#work-experience">Work Experience</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><a href="#work-experience" id="work-experience-link" class="">Experience</a></li>
+							<li><a href="#about-me" id="about-me-link" class="">About me</a></li>
+							<li><a href="#contact" id="contact-link" class="">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -47,7 +47,7 @@
 		</div>
 	</div>
 
-	<div id="work-experience" class="page-section page-section--b-margin">
+	<div id="work-experience" class="page-section page-section--b-margin" data-matching-link="#work-experience-link">
 		<div class="wrapper">
 			<h1 class="headline headline--centered">Work Experience</h1>
 
@@ -55,13 +55,16 @@
 
 					<div class="row__medium-4">
 						<div class="work">
+						<div class="work__picture">
 							<picture>
 								<img src="assets/images/gdsmodellica.png" alt="Git a Web Developer Job" class="work__image">
 							</picture>
+							</div>
 							<div class="work__content">
 								<h1 class="work__name">GDS Modellica</h1>
 								<p class="work__description">Worked as a developer</p>
 							</div>
+							<i class="fa fa-question-circle-o work__question-mark work__question-mark--modellica" aria-hidden="true"></i>
 						</div>
 					</div>
 					
@@ -72,6 +75,7 @@
 								<h1 class="work__name">AlmaShopping</h1>
 								<p class="work__description">Webmaster of the site</p>
 							</div>
+							<i class="fa fa-question-circle-o work__question-mark" aria-hidden="true"></i>
 						</div>
 					</div>
 
@@ -82,6 +86,7 @@
 								<h1 class="work__name">GrowIT</h1>
 								<p class="work__description">Developer and support. Worked with SugarCRM</p>
 							</div>
+							<i class="fa fa-question-circle-o work__question-mark" aria-hidden="true"></i>
 						</div>
 					</div>
 
@@ -91,62 +96,72 @@
 			
 		</div> <!-- Courses -->
 
-		<div id="about-me" class="page-section page-section--blue">
+		<div id="about-me" class="page-section page-section--blue about-me" data-matching-link="#about-me-link">
 			<div class="wrapper">
-				<h1 class="headline headline--centered headline--gold">About me</h1>
-				<div class="default-text">
-					<p>My name is Gaston Kirsman and I am a 24 years old Jr Front End Developer. I was born in Argentina and I currently live in Israel. I am finishing my studies at ORT Institute. </p>
-					<p>Developing is my passion. I enjoy learning new technologies and improving my skills. Here are some of my favourite things about web development.</p>
-				</div>
-
-				<div class="row row-gutters">
-					<div class="row__medium-6">
-						<div class="technology">
-							<h2 class="technology__title"><img src="assets/images/icons/js-icon.svg" class="technology__icon">Javascript</h2>
-							<p>My favourite technology all the way. Hands down to JS!</p>
+				<div class="row">
+					<div class="row__medium-8">
+						<h1 class="headline headline--centered headline--gold">About me</h1>
+						<div class="default-text">
+							<p>My name is Gaston Kirsman and I am a 24 years old Jr Front End Developer. I was born in Argentina and I currently live in Israel. I am finishing my studies at ORT Institute. </p>
+							<p>Developing is my passion. I enjoy learning new technologies and improving my skills. Here are some of my favourite things about web development.</p>
 						</div>
 
-						<div class="technology">
-							<h2 class="technology__title"><img src="assets/images/icons/html-icon.svg" class="technology__icon">HTML</h2>
-							<p>For making great websites.</p>
+						<div class="row row-gutters">
+							<div class="row__medium-6">
+								<div class="technology">
+									<h2 class="technology__title"><img src="assets/images/icons/js-icon.svg" class="technology__icon">Javascript</h2>
+									<p>My favourite technology all the way. Hands down to JS!</p>
+								</div>
+
+								<div class="technology">
+									<h2 class="technology__title"><img src="assets/images/icons/html-icon.svg" class="technology__icon">HTML</h2>
+									<p>For making great websites.</p>
+								</div>
+							</div>
+
+							<div class="row__medium-6">
+								<div class="technology">
+									<h2 class="technology__title"><img src="assets/images/icons/css-icon.svg" class="technology__icon">CSS</h2>
+									<p>HTML little bro! Styling, animations, transformations.</p>
+								</div>
+
+								<div class="technology">
+									<h2 class="technology__title"><img src="assets/images/icons/more-icon.svg" class="technology__icon">And more!</h2>
+									<p>All the tools you can imagine. npm, gulp, postcss, sass.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row__medium-4">
+						<div class="about-me__icon">
+							<img src="assets/images/laptop-icon.png">
 						</div>
 					</div>
 
-					<div class="row__medium-6">
-						<div class="technology">
-							<h2 class="technology__title"><img src="assets/images/icons/css-icon.svg" class="technology__icon">CSS</h2>
-							<p>HTML little bro! Styling, animations, transformations. CSS3 has it all!</p>
-						</div>
-
-						<div class="technology">
-							<h2 class="technology__title"><img src="assets/images/icons/more-icon.svg" class="technology__icon">And more!</h2>
-							<p>All the tools you can imagine. npm, gulp, postcss, sass.</p>
-						</div>
-					</div>
 				</div>
 			</div> <!-- wrapper -->
 
 
 		</div> <!-- about me -->
 
-		<div id="contact" class="contact page-section">
+		<div id="contact" class="contact page-section" data-matching-link="#contact-link">
 			<div class="wrapper wrapper--center">
 				<h1 class="headline">Contact me :)</h1>
-				<i class="icon icon--paper-plane fa fa-paper-plane" aria-hidden="true"></i>
-				<div class="contact__form">
-
-					<label for="name">Name</label>
-					<input type="text" id="name">
-					
-					<label for="surename">Surename</label>
-					<input type="text" id="surename">
-
-					<label for="msg">Message</label>
-					<input type="text" id="msg">
-
-					<button class="btn btn--blue">Submit</button>
-				</div>
+				<form autocomplete="off" id="contact-form" method="post" action="#">
+					<input required type="text" placeholder="Name" class="contact__input" name="name">
+					<input required type="email" placeholder="Email" class="contact__input" name="email">
+					<textarea required rows="8" placeholder="Message" class="contact__input" name="msg"></textarea>
+					<div>
+					<button class="btn btn--blue">Send</button>
+					</div>
+				</form>
 			</div>
+		</div>
+
+		<div id="footer">
+			
 		</div>
 
 		<script type="text/javascript" src="/temp/scripts/App.js"></script>

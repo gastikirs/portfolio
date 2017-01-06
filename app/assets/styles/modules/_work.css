@@ -10,6 +10,8 @@
 	border-bottom: 4px solid $mainBlue;
 	position: relative;
 
+
+
 	@mixin atMedium {
 		padding: 1rem;
 		background-color: transparent;
@@ -33,13 +35,35 @@
 		font-size: .8rem;
 	}
 
+
 	&__image{
 
-		
 		@mixin atMedium {
 			border-bottom: 4px solid $mainBlue;
 			margin: 0 auto;
-			display: block;
+			display: block;	
+		}
+		
+	}
+
+	&__question-mark {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+		transition: color .3s ease-out;
+
+		@mixin atMedium {
+			right: 2rem;
+		}
+
+		@mixin atLarge {
+			right: 2.5rem;
+			font-size: 1.2rem;
+		}
+		
+		&:hover {
+			cursor: pointer;
+			color: $mainRed;
 		}
 	}
 
