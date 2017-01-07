@@ -56,6 +56,10 @@
 		top: 10px;
 		right: 10px;
 
+		&:hover {
+			cursor: pointer;
+		}
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -93,6 +97,8 @@
 		@mixin atMedium {
 			display: none;
 		}
+
+
 	}
 
 	&__menu-icon--close-x {

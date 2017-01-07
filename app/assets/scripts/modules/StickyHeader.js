@@ -13,11 +13,13 @@ class StickyHeader {
 		this.pageSections = $(".page-section");
 		this.createPageSectionWaypoints();
 		this.headerLinks = $(".primary-nav a");
+		this.mainBtn = $(".jumbo__button");
 		this.addSmoothScrolling();
 	}
 
 	addSmoothScrolling () {
 		this.headerLinks.smoothScroll();
+		this.mainBtn.smoothScroll();
 	}
 
 	createHeaderWaypoint() {

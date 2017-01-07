@@ -11211,6 +11211,7 @@
 			this.pageSections = (0, _jquery2.default)(".page-section");
 			this.createPageSectionWaypoints();
 			this.headerLinks = (0, _jquery2.default)(".primary-nav a");
+			this.mainBtn = (0, _jquery2.default)(".jumbo__button");
 			this.addSmoothScrolling();
 		}
 
@@ -11218,6 +11219,7 @@
 			key: 'addSmoothScrolling',
 			value: function addSmoothScrolling() {
 				this.headerLinks.smoothScroll();
+				this.mainBtn.smoothScroll();
 			}
 		}, {
 			key: 'createHeaderWaypoint',
@@ -11672,16 +11674,22 @@
 			_classCallCheck(this, QuestionMark);
 
 			this.questionMarkModellica = (0, _jquery2.default)(".work__question-mark--modellica");
-			this.work = (0, _jquery2.default)(".work");
+			this.alma = (0, _jquery2.default)("#work-almashopping");
+			this.growit = (0, _jquery2.default)("#work-growit");
+			this.gds = (0, _jquery2.default)("#work-gds");
+			this.test = (0, _jquery2.default)(".test1");
+
 			this.handleEvents();
 		}
 
 		_createClass(QuestionMark, [{
 			key: "handleEvents",
 			value: function handleEvents() {
-				var that = this;
-				this.questionMarkModellica.on('click', function () {});
+				this.questionMarkModellica.on('click', this.moveRightWorks.bind(this));
 			}
+		}, {
+			key: "moveRightWorks",
+			value: function moveRightWorks() {}
 		}]);
 
 		return QuestionMark;

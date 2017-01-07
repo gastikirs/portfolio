@@ -481,7 +481,7 @@ a {
 }
 
 a:hover{
-	color: #CD5C5C;
+	color: #FFDF00;
 }
 
 .site-header{
@@ -553,6 +553,10 @@ a:hover{
   z-index: 10;
   top: 10px;
   right: 10px;
+}
+
+.site-header__menu-icon:hover {
+  cursor: pointer;
 }
 
 .site-header__menu-icon::before {
@@ -832,14 +836,12 @@ a:hover{
 @media (min-width: 800px) {
 
   .work {
-    padding: 1rem;
     background-color: transparent;
     border-bottom: none;
   }
 }
 
 .work__content {
-  padding: 1rem 0;
   border-radius: 0 0 1rem 1rem;
 }
 
@@ -965,7 +967,13 @@ a:hover{
 	
 	position: relative;
 	text-align: center;
-	height: 6rem;
+}
+
+@media (min-width: 800px) {
+
+  .technology {
+    margin-bottom: 3rem;
+  }
 }
 
 .technology__title {

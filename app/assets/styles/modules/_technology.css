@@ -2,7 +2,10 @@
 	
 	position: relative;
 	text-align: center;
-	height: 6rem;
+	
+	@mixin atMedium {
+		margin-bottom: 3rem;
+	}
 
 	&__title {
 		color: $gold;
