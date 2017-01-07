@@ -1,0 +1,65 @@
+.work {
+	padding: 1rem 0;
+	margin: .5rem 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	border-bottom: 4px solid $mainBlue;
+	position: relative;
+
+
+	@mixin atMedium {
+		background-color: transparent;
+		border-bottom: none;
+
+	}
+
+	&__content {
+		border-radius: 0 0 1rem 1rem;
+
+	}
+
+	&__name {
+		font-size: 1rem;
+
+	}
+
+	&__description {
+		font-size: .8rem;
+	}
+
+	&__image{
+
+		@mixin atMedium {
+			border-bottom: 4px solid $mainBlue;
+			margin: 0 auto;
+			display: block;	
+		}
+		
+	}
+
+	&__question-mark {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+		transition: color .3s ease-out;
+
+		@mixin atMedium {
+			right: 2rem;
+		}
+
+		@mixin atLarge {
+			right: 2.5rem;
+			font-size: 1.2rem;
+		}
+		
+		&:hover {
+			cursor: pointer;
+			color: $mainRed;
+		}
+	}
+
+}

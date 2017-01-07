@@ -1,0 +1,17 @@
+.about-me {
+
+	&__icon {
+		display: none;
+
+		@mixin atMedium {
+			display: block;
+			position: relative;
+			left: 2rem;
+			transform: translateY(80%);
+		}
+
+		@mixin atLarge {
+			transform: translateY(50%);
+		}
+	}
+}
