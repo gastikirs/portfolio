@@ -10,10 +10,11 @@
 	border-bottom: 4px solid $mainBlue;
 	position: relative;
 
-
 	@mixin atMedium {
 		background-color: transparent;
 		border-bottom: none;
+		padding: 1rem 0 0 0;
+		margin: 0;
 
 	}
 
@@ -31,6 +32,35 @@
 		font-size: .8rem;
 	}
 
+	&__msg {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		text-align: center;
+		background-color: black;
+		overflow: hidden;
+	}
+
+	&__details {
+		display: block;
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			}
+
+		@mixin atMedium {
+			display: none;
+			line-height: 1.3rem;
+
+		}
+	}
+
+	&__picture {
+		position: relative;
+
+	}
+
 	&__image{
 
 		@mixin atMedium {
@@ -39,27 +69,6 @@
 			display: block;	
 		}
 		
-	}
-
-	&__question-mark {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
-		transition: color .3s ease-out;
-
-		@mixin atMedium {
-			right: 2rem;
-		}
-
-		@mixin atLarge {
-			right: 2.5rem;
-			font-size: 1.2rem;
-		}
-		
-		&:hover {
-			cursor: pointer;
-			color: $mainRed;
-		}
 	}
 
 }

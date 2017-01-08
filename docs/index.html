@@ -53,41 +53,72 @@
 
 				<div class="row row--gutters row--equal-height-at-medium">
 
-					<div class="row__medium-4">
-						<div class="work" id="work-gds">
+					<div class="row__medium-4" id="work-gds">
+						<div class="work" >
 							<div class="work__picture">
-								<picture>
-									<img src="assets/images/gdsmodellica.png" alt="Git a Web Developer Job" class="work__image">
-								</picture>
+									<img src="assets/images/gdsmodellica.png" alt="Git a Web Developer Job" class="work__image work__image-gds">
 							</div>
 							<div class="work__content">
 								<h1 class="work__name">GDS Modellica</h1>
-								<p class="work__description">Worked as a developer</p>
 							</div>
-							<i class="fa fa-question-circle-o work__question-mark work__question-mark--modellica" aria-hidden="true"></i>
-						</div>
-					</div>
-					
-					<div class="row__medium-4">
-						<div class="work" id="work-almashopping">
-							<img src="assets/images/almashopping.png" alt="Git a Web Developer Job" class="work__image">
-							<div class="work__content">
-								<h1 class="work__name">AlmaShopping</h1>
-								<p class="work__description">Webmaster of the site</p>
-							</div>
-							<i class="fa fa-question-circle-o work__question-mark" aria-hidden="true"></i>
 						</div>
 					</div>
 
-					<div class="row__medium-4">
-						<div class="work" id="work-growit">
-							<img src="assets/images/growit.png" alt="Git a Web Developer Job" class="work__image">
+					<div class="work__details work__details-gds row__medium-8">
+						<h1>GDS Modellica</h1>
+						<h3><a href="www.gdslink.com">Website</a></h3>
+						<p><strong>GDS Modellica</strong> is a Financial Services Credit risk and analytics technology company with global reach. It offers technology solutions and analytical and consulting services for the modern lender. Provides risk management and workflow automation solutions that encompass the entire credit life-cycle.</p>
+						<h4>Responsibilities</h4>
+							<ul>
+								<li>Customized Risk Management Software for fiscal clients</li>
+								<li>jQuery and MongoDB used for front end development</li>
+								<li>Used Git for version control</li>	
+								<li>Created product requirements documents</li>
+								<li>Worked in a team of four developers</li>
+							</ul>
+					</div>
+
+					<div class="row__medium-4" id="work-almashopping">
+						<div class="work" >
+							<img src="assets/images/almashopping.png" alt="Git a Web Developer Job" class="work__image work__image-alma">
+							<div class="work__content">
+								<h1 class="work__name">AlmaShopping</h1>
+							</div>
+						</div>
+					</div>
+
+					<div class="work__details work__details-alma row__medium-8">
+						<h1>AlmaShopping</h1>
+						<h3><a href="www.almashopping.com">Website</a></h3>
+						<p><strong>AlmaShopping</strong> is a leading South American online store for fragances and perfumes. </p>
+						<h4>Responsibilities</h4>
+							<ul>
+								<li>Managed website content</li>
+								<li>Photoshop and Illustrator used for content design</li>
+								<li>Developed the logistics</li>	
+								<li>In charge of product distribution and customer service</li>
+							</ul>
+					</div>
+
+					<div class="row__medium-4" id="work-growit">
+						<div class="work" >
+							<img src="assets/images/growit.png" alt="Git a Web Developer Job" class="work__image work__image-growit">
 							<div class="work__content">
 								<h1 class="work__name">GrowIT</h1>
-								<p class="work__description">Developer and support. Worked with SugarCRM</p>
 							</div>
-							<i class="fa fa-question-circle-o work__question-mark" aria-hidden="true"></i>
 						</div>
+					</div>
+
+					<div class="work__details work__details-growit row__medium-8">
+						<h1>GrowIT</h1>
+						<h3><a href="www.growit.com.ar">Website</a></h3>
+						<p><strong>GrowIT</strong> is a technology consultant dedicated to the implementation, adaptation and integration of bussiness solutions focused on improving the relationship with clients. </p>
+						<h4>Responsibilities</h4>
+							<ul>
+								<li>Worked with SugarCRM (Customer Relationship Management Software</li>
+								<li>Customized the product according to the client's requirements</li>
+								<li>PHP and MySQL used for customizations</li>	
+							</ul>
 					</div>
 
 				</div> <!-- Row -->
@@ -151,23 +182,24 @@
 
 		</div> <!-- about me -->
 
-		<div id="contact" class="contact page-section" data-matching-link="#contact-link">
+		<div id="contact" class="contact page-section" action="//formspree.io/gaston.kirsman@gmail.com" data-matching-link="#contact-link">
 			<div class="wrapper wrapper--center">
-				<h1 class="headline">Contact me :)</h1>
+				<h1 class="headline">Contact me</h1>
 				<form autocomplete="off" id="contact-form" method="post" action="#">
 					<input required type="text" placeholder="Name" class="contact__input" name="name">
 					<input required type="email" placeholder="Email" class="contact__input" name="email">
-					<textarea required rows="8" placeholder="Message" class="contact__input" name="msg"></textarea>
+					<textarea required rows="8" placeholder="Message" class="contact__input" name="message"></textarea>
 					<div>
-					<button class="btn btn--blue">Send</button>
+					<button class="btn btn--blue" type="submit" id="#contact-submit">Send</button>
 					</div>
 				</form>
 			</div>
+
 		</div>
 
-		<div id="footer">
-			
-		</div>
+	
+
+	
 
 		<script type="text/javascript" src="./temp/scripts/App.js"></script>
 </body>

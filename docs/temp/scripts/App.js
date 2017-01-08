@@ -62,9 +62,13 @@
 
 	var _LaptopWriting2 = _interopRequireDefault(_LaptopWriting);
 
-	var _QuestionMark = __webpack_require__(8);
+	var _Work = __webpack_require__(8);
 
-	var _QuestionMark2 = _interopRequireDefault(_QuestionMark);
+	var _Work2 = _interopRequireDefault(_Work);
+
+	var _ContactForm = __webpack_require__(9);
+
+	var _ContactForm2 = _interopRequireDefault(_ContactForm);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -72,7 +76,8 @@
 	var revealOnScroll = new _RevealOnScroll2.default();
 	var stickyHeader = new _StickyHeader2.default();
 	var laptopWriting = new _LaptopWriting2.default();
-	var questionMark = new _QuestionMark2.default();
+	var work = new _Work2.default();
+	var contactForm = new _ContactForm2.default();
 
 /***/ },
 /* 1 */
@@ -10377,7 +10382,7 @@
 		function RevealOnScroll() {
 			_classCallCheck(this, RevealOnScroll);
 
-			this.itemsToReveal = (0, _jquery2.default)('.work, .technology');
+			this.itemsToReveal = (0, _jquery2.default)('.work, .technology, .work__details');
 			this.hideInicial();
 			this.createWaypoints();
 		}
@@ -11669,33 +11674,154 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var QuestionMark = function () {
-		function QuestionMark() {
-			_classCallCheck(this, QuestionMark);
+	var Work = function () {
+		function Work() {
+			_classCallCheck(this, Work);
 
-			this.questionMarkModellica = (0, _jquery2.default)(".work__question-mark--modellica");
+			this.workImageGDS = (0, _jquery2.default)(".work__image-gds");
+			this.workImageAlma = (0, _jquery2.default)(".work__image-alma");
+			this.workImageGrowit = (0, _jquery2.default)(".work__image-growit");
+
 			this.alma = (0, _jquery2.default)("#work-almashopping");
 			this.growit = (0, _jquery2.default)("#work-growit");
 			this.gds = (0, _jquery2.default)("#work-gds");
-			this.test = (0, _jquery2.default)(".test1");
+
+			this.workContentGDS = (0, _jquery2.default)(".work__details-gds");
+			this.workContentAlma = (0, _jquery2.default)(".work__details-alma");
+			this.workContentGrowit = (0, _jquery2.default)(".work__details-growit");
 
 			this.handleEvents();
 		}
 
-		_createClass(QuestionMark, [{
+		_createClass(Work, [{
 			key: "handleEvents",
 			value: function handleEvents() {
-				this.questionMarkModellica.on('click', this.moveRightWorks.bind(this));
+				this.workImageGDS.on('click', this.hideTwoAndThree.bind(this));
+				this.workImageAlma.on('click', this.hideOneAndThree.bind(this));
+				this.workImageGrowit.on('click', this.hideOneAndTwo.bind(this));
 			}
 		}, {
-			key: "moveRightWorks",
-			value: function moveRightWorks() {}
+			key: "hideTwoAndThree",
+			value: function hideTwoAndThree() {
+				var that = this;
+				if (this.isScreenMedium()) {
+					if (!this.workContentGDS.is(':visible')) {
+						this.alma.fadeOut();
+						this.growit.fadeOut();
+						setTimeout(function () {
+							that.workContentGDS.fadeIn();
+						}, 500);
+					} else {
+						this.workContentGDS.fadeOut();
+						setTimeout(function () {
+							that.alma.fadeIn();
+							that.growit.fadeIn();
+						}, 500);
+					}
+				}
+			}
+		}, {
+			key: "hideOneAndThree",
+			value: function hideOneAndThree() {
+				var that = this;
+				if (this.isScreenMedium()) {
+					if (!this.workContentAlma.is(':visible')) {
+						this.gds.fadeOut();
+						this.growit.fadeOut();
+						setTimeout(function () {
+							that.workContentAlma.fadeIn();
+						}, 500);
+					} else {
+						this.workContentAlma.fadeOut();
+						setTimeout(function () {
+							that.gds.fadeIn();
+							that.growit.fadeIn();
+						}, 500);
+					}
+				}
+			}
+		}, {
+			key: "hideOneAndTwo",
+			value: function hideOneAndTwo() {
+				var that = this;
+				if (this.isScreenMedium()) {
+					if (!this.workContentGrowit.is(':visible')) {
+						this.gds.fadeOut();
+						this.alma.fadeOut();
+						setTimeout(function () {
+							that.workContentGrowit.fadeIn();
+						}, 500);
+					} else {
+						this.workContentGrowit.fadeOut();
+						setTimeout(function () {
+							that.gds.fadeIn();
+							that.alma.fadeIn();
+						}, 500);
+					}
+				}
+			}
+		}, {
+			key: "isScreenMedium",
+			value: function isScreenMedium() {
+				if ((0, _jquery2.default)(window).width() > 800) {
+					return true;
+				}
+			}
 		}]);
 
-		return QuestionMark;
+		return Work;
 	}();
 
-	exports.default = QuestionMark;
+	exports.default = Work;
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(2);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var ContactForm = function () {
+		function ContactForm() {
+			_classCallCheck(this, ContactForm);
+
+			this.contactForm = (0, _jquery2.default)('#contact-form');
+
+			this.handleForm();
+		}
+
+		_createClass(ContactForm, [{
+			key: 'handleForm',
+			value: function handleForm() {
+				this.contactForm.submit(function (e) {
+					e.preventDefault();
+					_jquery2.default.ajax({
+						url: '//formspree.io/gaston.kirsman@gmail.com',
+						method: 'POST',
+						data: (0, _jquery2.default)(this).serialize(),
+						dataType: 'json'
+					});
+				});
+			}
+		}]);
+
+		return ContactForm;
+	}();
+
+	exports.default = ContactForm;
 
 /***/ }
 /******/ ]);

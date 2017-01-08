@@ -34,6 +34,14 @@
 		}
 	}
 
+	&__medium-12 {
+
+		@mixin atMedium {
+			float: left;
+			width: 100%;
+		}
+	}
+
 	&--equal-height-at-medium {
 		@mixin atMedium {
 			display: flex;
@@ -41,8 +49,7 @@
 		}
 		
 		& > div {
-			float: none;
-			display: flex;		
+			float: none;		
 		}
 	}
 	

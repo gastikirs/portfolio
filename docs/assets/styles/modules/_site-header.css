@@ -6,6 +6,7 @@
 	padding: 1rem 0;
 	padding-top: 100px;
 	transition: all .3s ease-out;
+	position: fixed;
 
 	&--is-expanded {
 		background-color: rgba(0,0,0,.8);
@@ -14,7 +15,7 @@
 	@mixin atMedium {
 		background-color: rgba(0,0,0,.3);
 		padding-top: 1rem;
-		position: fixed;
+
 
 		&--dark {
 			background-color: rgba(0,0,0,.75);
@@ -56,6 +57,7 @@
 		top: 10px;
 		right: 10px;
 
+
 		&:hover {
 			cursor: pointer;
 		}
@@ -67,7 +69,7 @@
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: #fff;
+			background-color: black;
 			transform-origin: 0 0;
 			transition: all .3s ease-out;
 		}
@@ -78,7 +80,7 @@
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: #fff;
+			background-color: black;
 			transition: all .3s ease-out;
 		}
 
@@ -89,7 +91,7 @@
 			left: 0;
 			width: 20px;
 			height: 3px;
-			background-color: #fff;
+			background-color: black;
 			transform-origin: 0 100%;
 			transition: all .3s ease-out;
 		}
@@ -104,11 +106,13 @@
 	&__menu-icon--close-x {
 
 		&::before {
-			transform: rotate(45deg) scaleX(1.25); 
+			transform: rotate(45deg) scaleX(1.25);
+			background-color: #fff; 
 		}
 
 		&::after {
 			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+			background-color: #fff; 
 		}
 
 		.site-header__menu-icon__middle {
