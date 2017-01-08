@@ -1176,3 +1176,16 @@ a:hover{
 		-webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
 	}
 }
+
+.box {
+	border: 1px solid black;
+	padding: .5rem 0;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.box--success {
+  border-color: #005000;
+  color: #4F8A10;
+  background-color: #DFF2BF;
+}

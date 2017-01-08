@@ -9,6 +9,7 @@ class ContactForm {
 	}
 
 	handleForm() {
+		var that = this;
 		this.contactForm.submit(function(e) {
 			e.preventDefault();
 			$.ajax({
@@ -16,6 +17,13 @@ class ContactForm {
 				method: 'POST',
 				data: $(this).serialize(),
 				dataType: 'json',
+
+				success: function() {
+					var message = "<div class='box box--success'><h3><i class='fa fa-check' aria-hidden='true'></i>Your message has been successfully sent</h3></div>"
+					alert('a');
+					that.contactForm[0].reset();
+					that.contactForm.prepend(message);
+				}
 			});
 		});
 	}

@@ -18,6 +18,8 @@ class Work {
 
 	}
 
+
+
 	handleEvents() {
 		this.workImageGDS.on('click', this.hideTwoAndThree.bind(this));
 		this.workImageAlma.on('click', this.hideOneAndThree.bind(this));
@@ -31,7 +33,7 @@ class Work {
 				this.alma.fadeOut();
 				this.growit.fadeOut();
 				setTimeout(function(){
-					that.workContentGDS.fadeIn();
+					that.workContentGDS.show();
 				}, 500);
 			} else {
 				this.workContentGDS.fadeOut();
@@ -50,7 +52,7 @@ class Work {
 				this.gds.fadeOut();
 				this.growit.fadeOut();
 				setTimeout(function(){
-					that.workContentAlma.fadeIn();
+					that.workContentAlma.show();
 				}, 500);
 			} else {
 				this.workContentAlma.fadeOut();
@@ -69,7 +71,7 @@ class Work {
 				this.gds.fadeOut();
 				this.alma.fadeOut();
 				setTimeout(function(){
-					that.workContentGrowit.fadeIn()
+					that.workContentGrowit.show()
 				}, 500);
 			} else {
 				this.workContentGrowit.fadeOut();

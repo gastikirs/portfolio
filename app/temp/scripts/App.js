@@ -11709,7 +11709,7 @@
 						this.alma.fadeOut();
 						this.growit.fadeOut();
 						setTimeout(function () {
-							that.workContentGDS.fadeIn();
+							that.workContentGDS.show();
 						}, 500);
 					} else {
 						this.workContentGDS.fadeOut();
@@ -11729,7 +11729,7 @@
 						this.gds.fadeOut();
 						this.growit.fadeOut();
 						setTimeout(function () {
-							that.workContentAlma.fadeIn();
+							that.workContentAlma.show();
 						}, 500);
 					} else {
 						this.workContentAlma.fadeOut();
@@ -11749,7 +11749,7 @@
 						this.gds.fadeOut();
 						this.alma.fadeOut();
 						setTimeout(function () {
-							that.workContentGrowit.fadeIn();
+							that.workContentGrowit.show();
 						}, 500);
 					} else {
 						this.workContentGrowit.fadeOut();
@@ -11806,13 +11806,21 @@
 		_createClass(ContactForm, [{
 			key: 'handleForm',
 			value: function handleForm() {
+				var that = this;
 				this.contactForm.submit(function (e) {
 					e.preventDefault();
 					_jquery2.default.ajax({
 						url: '//formspree.io/gaston.kirsman@gmail.com',
 						method: 'POST',
 						data: (0, _jquery2.default)(this).serialize(),
-						dataType: 'json'
+						dataType: 'json',
+
+						success: function success() {
+							var message = "<div class='box box--success'><h3><i class='fa fa-check' aria-hidden='true'></i>Your message has been successfully sent</h3></div>";
+							alert('a');
+							that.contactForm[0].reset();
+							that.contactForm.prepend(message);
+						}
 					});
 				});
 			}

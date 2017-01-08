@@ -1,0 +1,2 @@
+- Corregir el JS effect de los works
+- Textos de about me
