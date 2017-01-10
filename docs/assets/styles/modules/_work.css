@@ -1,0 +1,141 @@
+.work {
+	padding: 1rem 0;
+	margin: .5rem 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	border-bottom: 4px solid $mainBlue;
+	position: relative;
+
+	@mixin atMedium {
+		background-color: transparent;
+		border-bottom: none;
+		padding: 1rem 0 0 0;
+		margin: 0;
+
+	}
+
+	&__name {
+		font-size: 1rem;
+		display: inline-block;
+
+
+	}
+
+	&__description {
+		font-size: .8rem;
+	}
+
+	&__msg {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		text-align: center;
+		background-color: black;
+		overflow: hidden;
+	}
+
+	&__details {
+		display: block;
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			}
+
+		@mixin atMedium {
+			display: none;
+			line-height: 1.3rem;
+
+		}
+
+		&__company {
+			margin: 0;
+		}
+
+		&__period {
+			margin-top: .45rem;
+			margin-bottom: 0;
+		}
+
+		&__arrow {
+			display: none;
+
+			@mixin atMedium {
+				display: block;
+				color: $mainBlue;
+				font-size: 1.3rem;
+				transition: all .2s ease-out;				
+			}
+
+
+			&:hover {
+				color: $mainRed;
+				cursor: pointer;
+			}
+		}
+	}
+
+
+	&__picture {
+	
+		@mixin atMedium {
+			position: relative;
+		}
+	}
+
+	&__overlay {
+		
+		display: none;
+
+		@mixin atMedium {
+			color: #fff;
+			text-align: center;
+			display: block;
+			position: absolute;
+			background-color: rgba(0,0,0,.6);
+			margin: 0 auto;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 1;
+			transition: opacity .5s ease-out;
+
+			p {
+				
+			}
+		}
+
+		@mixin atLarge {
+			width: 300px;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+
+	}
+
+	&__image{
+
+		@mixin atMedium {
+			border-bottom: 4px solid $mainBlue;
+			display: block;	
+			margin: 0 auto;
+			opacity: .75;
+			transition: all .5s ease-out;
+
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
+		}
+		
+	}
+
+}
