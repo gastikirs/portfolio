@@ -821,81 +821,6 @@ a:hover{
   background-color: #2f5572;
 }
 
-.work {
-	padding: 1rem 0;
-	margin: .5rem 0;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	width: 100%;
-	text-align: center;
-	background-color: white;
-	border-bottom: 4px solid #2f5572;
-	position: relative;
-
-}
-
-@media (min-width: 800px) {
-
-  .work {
-    background-color: transparent;
-    border-bottom: none;
-    padding: 1rem 0 0 0;
-    margin: 0;
-  }
-}
-
-.work__content {
-  border-radius: 0 0 1rem 1rem;
-}
-
-.work__name {
-  font-size: 1rem;
-}
-
-.work__description {
-  font-size: .8rem;
-}
-
-.work__msg {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-  background-color: black;
-  overflow: hidden;
-}
-
-.work__details {
-  display: block;
-}
-
-.work__details ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-@media (min-width: 800px) {
-
-  .work__details {
-    display: none;
-    line-height: 1.3rem;
-  }
-}
-
-.work__picture {
-  position: relative;
-}
-
-@media (min-width: 800px) {
-
-  .work__image {
-    border-bottom: 4px solid #2f5572;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
 .row::after {
   content: "";
   clear: both;
@@ -955,10 +880,159 @@ a:hover{
   float: none;
 }
 
+.work {
+	padding: 1rem 0;
+	margin: .5rem 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	border-bottom: 4px solid #2f5572;
+	position: relative;
+
+}
+
+@media (min-width: 800px) {
+
+  .work {
+    background-color: transparent;
+    border-bottom: none;
+    padding: 1rem 0 0 0;
+    margin: 0;
+  }
+}
+
+.work__name {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.work__description {
+  font-size: .8rem;
+}
+
+.work__msg {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+.work__details {
+  display: block;
+}
+
+.work__details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: 800px) {
+
+  .work__details {
+    display: none;
+    line-height: 1.3rem;
+  }
+}
+
+.work__details__company {
+  margin: 0;
+}
+
+.work__details__period {
+  margin-top: .45rem;
+  margin-bottom: 0;
+}
+
+.work__details__arrow {
+  display: none;
+}
+
+@media (min-width: 800px) {
+
+  .work__details__arrow {
+    display: block;
+    color: #2f5572;
+    font-size: 1.3rem;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  }
+}
+
+.work__details__arrow:hover {
+  color: #CD5C5C;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+
+  .work__picture {
+    position: relative;
+  }
+}
+
+.work__overlay {
+  display: none;
+}
+
+@media (min-width: 800px) {
+
+  .work__overlay {
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    margin: 0 auto;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    -webkit-transition: opacity .5s ease-out;
+    transition: opacity .5s ease-out;
+  }
+
+  .work__overlay p {}
+}
+
+@media (min-width: 1077px) {
+
+  .work__overlay {
+    width: 300px;
+  }
+}
+
+.work__overlay:hover {
+  opacity: 1;
+}
+
+@media (min-width: 800px) {
+
+  .work__image {
+    border-bottom: 4px solid #2f5572;
+    display: block;
+    margin: 0 auto;
+    opacity: .75;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+  }
+
+  .work__image:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
 .headline {
 
 	font-weight: 500;
-	margin-bottom: 2rem;
+	margin: 0 0 1.5rem 0;
 
 }
 
@@ -968,6 +1042,10 @@ a:hover{
 
 .headline--gold {
   color: #FFDF00;
+}
+
+.headline--no-b-margin {
+  margin-bottom: 0;
 }
 
 .default-text p {
@@ -1017,6 +1095,11 @@ a:hover{
   margin: .3rem 0;
 }
 
+.contact__input:focus {
+  outline: none;
+  border: 1px solid #CD5C5C;
+}
+
 .icon--paper-plane {
   font-size: 2rem;
 }
@@ -1046,7 +1129,7 @@ a:hover{
   }
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 1077px) {
 
   .about-me__icon {
     -webkit-transform: translateY(50%);
