@@ -18,13 +18,10 @@
 
 	}
 
-	&__content {
-		border-radius: 0 0 1rem 1rem;
-
-	}
-
 	&__name {
 		font-size: 1rem;
+		display: inline-block;
+
 
 	}
 
@@ -54,10 +51,73 @@
 			line-height: 1.3rem;
 
 		}
+
+		&__company {
+			margin: 0;
+		}
+
+		&__period {
+			margin-top: .45rem;
+			margin-bottom: 0;
+		}
+
+		&__arrow {
+			display: none;
+
+			@mixin atMedium {
+				display: block;
+				color: $mainBlue;
+				font-size: 1.3rem;
+				transition: all .2s ease-out;				
+			}
+
+
+			&:hover {
+				color: $mainRed;
+				cursor: pointer;
+			}
+		}
 	}
 
+
 	&__picture {
-		position: relative;
+	
+		@mixin atMedium {
+			position: relative;
+		}
+	}
+
+	&__overlay {
+		
+		display: none;
+
+		@mixin atMedium {
+			color: #fff;
+			text-align: center;
+			display: block;
+			position: absolute;
+			background-color: rgba(0,0,0,.6);
+			margin: 0 auto;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 1;
+			transition: opacity .5s ease-out;
+
+			p {
+				
+			}
+		}
+
+		@mixin atLarge {
+			width: 300px;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
 
 	}
 
@@ -65,8 +125,15 @@
 
 		@mixin atMedium {
 			border-bottom: 4px solid $mainBlue;
-			margin: 0 auto;
 			display: block;	
+			margin: 0 auto;
+			opacity: .75;
+			transition: all .5s ease-out;
+
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
 		}
 		
 	}

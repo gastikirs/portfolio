@@ -2,9 +2,9 @@ import $ from 'jquery';
 
 class Work {
 	constructor() {
-		this.workImageGDS = $(".work__image-gds");
-		this.workImageAlma = $(".work__image-alma");
-		this.workImageGrowit = $(".work__image-growit");
+		this.workTriggerGds = $(".work__trigger-gds");
+		this.workTriggerAlma = $(".work__trigger-alma");
+		this.workTriggerGrowit = $(".work__trigger-growit");
 
 		this.alma = $("#work-almashopping");
 		this.growit = $("#work-growit");
@@ -14,16 +14,17 @@ class Work {
 		this.workContentAlma = $(".work__details-alma");
 		this.workContentGrowit = $(".work__details-growit");
 
-		this.handleEvents();
 
+		this.handleEvents();
 	}
 
 
 
 	handleEvents() {
-		this.workImageGDS.on('click', this.hideTwoAndThree.bind(this));
-		this.workImageAlma.on('click', this.hideOneAndThree.bind(this));
-		this.workImageGrowit.on('click', this.hideOneAndTwo.bind(this));
+		this.workTriggerGds.on('click', this.hideTwoAndThree.bind(this));
+		this.workTriggerAlma.on('click', this.hideOneAndThree.bind(this));
+		this.workTriggerGrowit.on('click', this.hideOneAndTwo.bind(this));
+
 	}
 
 	hideTwoAndThree() {
@@ -84,7 +85,7 @@ class Work {
 	}
 
 	isScreenMedium() {
-		if ($(window).width() > 800) { 
+		if ($(window).width() > 799) { 
     	return true;
 		}
 	}

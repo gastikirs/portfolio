@@ -7,6 +7,11 @@
 		width: 100%;
 		padding: 15px;
 		margin: .3rem 0;
+
+		&:focus {
+			outline: none;
+			border: 1px solid $mainRed;
+		}
 	}
 
 }

@@ -11678,9 +11678,9 @@
 		function Work() {
 			_classCallCheck(this, Work);
 
-			this.workImageGDS = (0, _jquery2.default)(".work__image-gds");
-			this.workImageAlma = (0, _jquery2.default)(".work__image-alma");
-			this.workImageGrowit = (0, _jquery2.default)(".work__image-growit");
+			this.workTriggerGds = (0, _jquery2.default)(".work__trigger-gds");
+			this.workTriggerAlma = (0, _jquery2.default)(".work__trigger-alma");
+			this.workTriggerGrowit = (0, _jquery2.default)(".work__trigger-growit");
 
 			this.alma = (0, _jquery2.default)("#work-almashopping");
 			this.growit = (0, _jquery2.default)("#work-growit");
@@ -11696,9 +11696,9 @@
 		_createClass(Work, [{
 			key: "handleEvents",
 			value: function handleEvents() {
-				this.workImageGDS.on('click', this.hideTwoAndThree.bind(this));
-				this.workImageAlma.on('click', this.hideOneAndThree.bind(this));
-				this.workImageGrowit.on('click', this.hideOneAndTwo.bind(this));
+				this.workTriggerGds.on('click', this.hideTwoAndThree.bind(this));
+				this.workTriggerAlma.on('click', this.hideOneAndThree.bind(this));
+				this.workTriggerGrowit.on('click', this.hideOneAndTwo.bind(this));
 			}
 		}, {
 			key: "hideTwoAndThree",
@@ -11763,7 +11763,7 @@
 		}, {
 			key: "isScreenMedium",
 			value: function isScreenMedium() {
-				if ((0, _jquery2.default)(window).width() > 800) {
+				if ((0, _jquery2.default)(window).width() > 799) {
 					return true;
 				}
 			}
