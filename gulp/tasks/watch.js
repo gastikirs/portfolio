@@ -23,6 +23,11 @@ gulp.task('watch', function() {
 		gulp.start('scriptsRefresh');
 	});
 
+	gulp.watch('./app/assets/materialize/sass/**/*.scss', function() {
+		gulp.start('cssInject');
+		browserSync.reload();
+	});
+
 });
 
 gulp.task('cssInject', ['styles'], function() {

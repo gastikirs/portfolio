@@ -7,7 +7,7 @@
 @import 'modules/_primary-nav';
 @import 'modules/_page-section';
 @import 'modules/_jumbo';
-@import 'modules/_btn';
+/*@import 'modules/_btn';*/
 @import 'modules/_row';
 @import 'modules/_work';
 @import 'modules/_headline';
@@ -19,3 +19,5 @@
 @import 'modules/_about-me';
 @import 'modules/_cssload-loader';
 @import 'modules/_box';
+@import 'modules/_link';
+@import 'modules/_modal';

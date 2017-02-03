@@ -1,11 +1,16 @@
 import $ from 'jquery';
+import modal from '../../materialize/js/modal.js';
 
 class ContactForm {
 	constructor() {
 
 		this.contactForm = $('#contact-form');
+		this.modal = $('.modal');
+		this.modalButton = $('.modal__button');
+		this.window = $(window);
 
 		this.handleForm();
+		this.handleEvents();
 	}
 
 	handleForm() {
@@ -19,12 +24,16 @@ class ContactForm {
 				dataType: 'json',
 
 				success: function() {
-					var message = "<div class='box box--success'><h3><i class='fa fa-check' aria-hidden='true'></i>Your message has been successfully sent</h3></div>"
 					that.contactForm[0].reset();
-					that.contactForm.prepend(message);
+					that.modal.show();
 				}
 			});
 		});
+	}
+
+	handleEvents() {
+		this.modalButton.click(() => this.modal.hide());
+		this.window.click(() => this.modal.hide());
 	}
 }
 

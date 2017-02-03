@@ -4,8 +4,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Gaston Kirsman</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
 	<link rel="stylesheet" href="temp/styles/styles.css">
+	<link rel="stylesheet" href="temp/styles/materialize.css">
+
 </head>
 <body>
 
@@ -23,8 +28,8 @@
 					<nav class="primary-nav primary-nav--pull-right">
 						<ul>
 							<li><a href="#work-experience" id="work-experience-link" class="">Experience</a></li>
-							<li><a href="#about-me" id="about-me-link" class="">About me</a></li>
-							<li><a href="#contact" id="contact-link" class="">Contact</a></li>
+							<li><a href="#about-me" id="about-me-link" class="link">About me</a></li>
+							<li><a href="#contact" id="contact-link" class="link">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -42,7 +47,7 @@
 			<div class="wrapper">
 				<h1 class="jumbo__title">Hello! <br>I am Gaston Kirsman</h1>
 				<h3 class="jumbo__subtitle">I am an argentinian front end developer currently living in Israel</h3>
-				<a href="#work-experience" class="jumbo__button btn btn--blue">Know me!</a>
+				<a href="#work-experience" class="jumbo__button btn-large">Know me!</a>
 			</div>
 		</div>
 	</div>
@@ -59,15 +64,15 @@
 									<img src="assets/images/gdsmodellica.png" alt="Git a Web Developer Job" class="work__image work__trigger-gds">
 							</div>
 							<div class="work__content" id="test">
-								<h1 class="work__name">GDS Modellica</h1>
+								<h3 class="work__name">GDS Modellica</h3>
 							</div>
 						</div>
 					</div>
 
 					<div class="work__details work__details-gds row__medium-8">
-						<h1 class="work__details__company">GDS Modellica</h1>
+						<h4 class="work__details__company">GDS Modellica</h4>
 						<h5 class="work__details__period">2015-2016</h5>
-						<h3><a href="http://www.gdslink.com">Website</a></h3>
+						<h5><a href="http://www.gdslink.com">Website</a></h5>
 						<p><strong>GDS Modellica</strong> is a Financial Services Credit risk and analytics technology company with global reach. It offers technology solutions and analytical and consulting services for the modern lender. Provides risk management and workflow automation solutions that encompass the entire credit life-cycle.</p>
 						<h4>Responsibilities</h4>
 							<ul>
@@ -90,9 +95,9 @@
 					</div>
 
 					<div class="work__details work__details-alma row__medium-8">
-						<h1 class="work__details__company">AlmaShopping</h1>
+						<h4 class="work__details__company">AlmaShopping</h4>
 						<h5 class="work__details__period">2012-2015</h5>
-						<h3><a href="http://www.almashopping.com">Website</a></h3>
+						<h5><a href="http://www.almashopping.com">Website</a></h5>
 						<p><strong>AlmaShopping</strong> is a leading South American online store for fragances and perfumes. </p>
 						<h4>Responsibilities</h4>
 							<ul>
@@ -114,9 +119,9 @@
 					</div>
 
 					<div class="work__details work__details-growit row__medium-8">
-						<h1 class="work__details__company">GrowIT</h1>
+						<h4 class="work__details__company">GrowIT</h4>
 						<h5 class="work__details__period">2011-2012</h5>
-						<h3><a href="http://www.growit.com.ar">Website</a></h3>
+						<h5><a href="http://www.growit.com.ar">Website</a></h5>
 						<p><strong>GrowIT</strong> is a technology consultant dedicated to the implementation, adaptation and integration of business solutions focused on improving the relationship with clients. </p>
 						<h4>Responsibilities</h4>
 							<ul>
@@ -148,25 +153,25 @@
 						<div class="row row-gutters">
 							<div class="row__medium-6">
 								<div class="technology">
-									<h2 class="technology__title"><img src="assets/images/icons/js-icon.svg" class="technology__icon">Javascript</h2>
-									<p>My favourite technology!</p>
+									<h4 class="technology__title"><img src="assets/images/icons/js-icon.svg" class="technology__icon">Javascript</h4>
+									<p>Angular 2, React!</p>
 								</div>
 
 								<div class="technology">
-									<h2 class="technology__title"><img src="assets/images/icons/html-icon.svg" class="technology__icon">HTML</h2>
+									<h4 class="technology__title"><img src="assets/images/icons/html-icon.svg" class="technology__icon">HTML</h4>
 									<p>For web apps!</p>
 								</div>
 							</div>
 
 							<div class="row__medium-6">
 								<div class="technology">
-									<h2 class="technology__title"><img src="assets/images/icons/css-icon.svg" class="technology__icon">CSS</h2>
+									<h4 class="technology__title"><img src="assets/images/icons/css-icon.svg" class="technology__icon">CSS</h4>
 									<p>Styling, animations, transformations.</p>
 								</div>
 
 								<div class="technology">
-									<h2 class="technology__title"><img src="assets/images/icons/more-icon.svg" class="technology__icon">And more!</h2>
-									<p>Gulp, PostCSS, SASS, React.</p>
+									<h4 class="technology__title"><img src="assets/images/icons/more-icon.svg" class="technology__icon">And more!</h4>
+									<p>Gulp, PostCSS, SASS.</p>
 								</div>
 							</div>
 						</div>
@@ -175,7 +180,7 @@
 
 					<div class="row__medium-4">
 						<div class="about-me__icon">
-							<img src="assets/images/laptop-icon.png">
+							<img src="assets/images/technologies.png">
 						</div>
 					</div>
 
@@ -185,25 +190,95 @@
 
 		</div> <!-- about me -->
 
-		<div id="contact" class="contact page-section" action="//formspree.io/gaston.kirsman@gmail.com" data-matching-link="#contact-link">
-			<div class="wrapper wrapper--center">
-				<h1 class="headline">Get in touch</h1>
-				<form autocomplete="off" id="contact-form" method="post" action="#">
-					<input required type="text" placeholder="Name" class="contact__input" name="name">
-					<input required type="email" placeholder="Email" class="contact__input" name="email">
-					<textarea required rows="8" placeholder="Message" class="contact__input" name="message"></textarea>
-					<div>
-					<button class="btn btn--blue" type="submit" id="#contact-submit">Send</button>
+	<div id="contact" class="contact page-section" action="//formspree.io/gaston.kirsman@gmail.com" data-matching-link="#contact-link">
+
+				<h1 class="headline headline--centered">Get in touch</h1>
+				<div class="wrapper">
+					<p class="flow-text">Contact me through the form below. I will try to answer as soon as possible. You can also reach me via phone or skype. I will be glad to be in touch with you. We can speak English, Spanish and Hebrew!</p><br>
+				</div>
+
+		<div class="row">
+			<div class="row__medium-4 row--left-margin-right-at-medium contact__form">
+				<div class="wrapper">
+					<div class="card grey lighten-5">
+						<form autocomplete="off" id="contact-form" method="post">
+							<div class="card-content">
+								<div class="row">
+									<div class="input-field">
+					          <input name="name" id="name" type="text" required>
+					          <label for="name">Name</label>
+									</div>
+								</div>	
+
+								<div class="row">
+									<div class="input-field">
+					          <input name="correo" id="correo" type="text" required>
+					          <label for="correo">Email</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field">
+					          <textarea name="textarea" class="materialize-textarea" required></textarea>
+					          <label for="name">Message</label>
+									</div>
+								</div>
+								<div class="center-align">	
+									<button class="btn" type="submit" id="#contact-submit">Send</button>
+								</div>
+
+								</div> <!-- card content -->
+							</form>
+						</div>						
 					</div>
-				</form>
-			</div><br>
+				</div>
+
+					<div class="row__medium-6 z-depth-2 contact__right">
+						<h2 class="headline headline--centered headline--top-margin">Contact Information</h2>
+						
+						<div class="row__small-12 row__medium-6 contact__info">
+
+							<div class="row">
+								<div class="contact__item">
+									<i class="fa fa-envelope fa-3x contact__item-icon" aria-hidden="true"></i> <p class="contact__item-description">gaston.kirsman@gmail.com</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="contact__item">
+									<i class="fa fa-phone fa-4x contact__item-icon" aria-hidden="true"></i><p class="contact__item-description">(+972) 055-6679731</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="contact__item">
+									<i class="fa fa-skype fa-4x contact__item-icon" aria-hidden="true"></i> <p class="contact__item-description">gkirsman</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="row contact__image">
+							<img src="./assets/images/webdeveloper.png" alt="">
+						</div>
+
+					</div> <!-- row-6 -->
 
 		</div>
 
-	
+	</div> <!-- Contact section -->
+
+	<div class="modal">
+		<div class="modal__content">
+			<h4>Sent!</h4>
+			<p>Your message has been successfully sent</p>
+			<a class="btn modal__button">Close</a>
+		</div>
+	</div>
 
 	
 
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./assets/materialize/js/bin/materialize.js"></script>
 		<script type="text/javascript" src="./temp/scripts/App.js"></script>
 </body>
 </html>

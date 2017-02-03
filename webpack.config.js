@@ -1,3 +1,5 @@
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
 	entry: "./app/assets/scripts/App.js",
 	output: {
@@ -18,5 +20,4 @@ module.exports = {
 			}
 		]
 	}
-
 }
