@@ -28,7 +28,7 @@
 
 	&__logo {
 		position: absolute;
-		background-color: transparent;
+		background-color: black;
 		padding: 25px 36px;
 		top: 0;
 		left: 50%;
@@ -39,6 +39,7 @@
 		@mixin atMedium {
 			left: auto;
 			transform: translateX(0) translateY(-25%) scale(1.5);
+			background-color: transparent;
 
 		&--smaller {
 			transform: scale(.5);

@@ -17,6 +17,14 @@
 		}
 	}
 
+	&__medium-3{
+
+		@mixin atMedium {
+			float: left;
+			width: 25%;
+		}
+	}
+
 	&__medium-4 {
 
 		@mixin atMedium {
@@ -53,12 +61,14 @@
 		@mixin atMedium {
 			display: flex;
 
-		}
-		
-		& > div {
-
+			& > div {
+			display: flex;
 			float: none;		
 		}
+
+		}
+		
+		
 	}
 
 	&--left-margin-right-at-medium {

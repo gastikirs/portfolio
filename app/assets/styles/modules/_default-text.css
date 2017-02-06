@@ -1,5 +1,13 @@
 .default-text {
 	p {
 		font-weight: 200;
-	}			
+	}	
+
+	&--margin-b{
+		margin-bottom: 8rem;
+	}
+	
+	&--centered{
+		text-align: center;
+	}
 }

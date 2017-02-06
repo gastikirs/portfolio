@@ -62,21 +62,19 @@
 
 	var _LaptopWriting2 = _interopRequireDefault(_LaptopWriting);
 
-	var _Work = __webpack_require__(8);
-
-	var _Work2 = _interopRequireDefault(_Work);
-
-	var _ContactForm = __webpack_require__(9);
+	var _ContactForm = __webpack_require__(8);
 
 	var _ContactForm2 = _interopRequireDefault(_ContactForm);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var mobileMenu = new _MobileMenu2.default();
+	// import Work from './modules/Work';
+
 	var revealOnScroll = new _RevealOnScroll2.default();
 	var stickyHeader = new _StickyHeader2.default();
 	var laptopWriting = new _LaptopWriting2.default();
-	var work = new _Work2.default();
+	// var work = new Work();
 	var contactForm = new _ContactForm2.default();
 
 /***/ },
@@ -11656,126 +11654,6 @@
 /* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _jquery = __webpack_require__(2);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var Work = function () {
-		function Work() {
-			_classCallCheck(this, Work);
-
-			this.workTriggerGds = (0, _jquery2.default)(".work__trigger-gds");
-			this.workTriggerAlma = (0, _jquery2.default)(".work__trigger-alma");
-			this.workTriggerGrowit = (0, _jquery2.default)(".work__trigger-growit");
-
-			this.alma = (0, _jquery2.default)("#work-almashopping");
-			this.growit = (0, _jquery2.default)("#work-growit");
-			this.gds = (0, _jquery2.default)("#work-gds");
-
-			this.workContentGDS = (0, _jquery2.default)(".work__details-gds");
-			this.workContentAlma = (0, _jquery2.default)(".work__details-alma");
-			this.workContentGrowit = (0, _jquery2.default)(".work__details-growit");
-
-			this.handleEvents();
-		}
-
-		_createClass(Work, [{
-			key: "handleEvents",
-			value: function handleEvents() {
-				this.workTriggerGds.on('click', this.hideTwoAndThree.bind(this));
-				this.workTriggerAlma.on('click', this.hideOneAndThree.bind(this));
-				this.workTriggerGrowit.on('click', this.hideOneAndTwo.bind(this));
-			}
-		}, {
-			key: "hideTwoAndThree",
-			value: function hideTwoAndThree() {
-				var that = this;
-				if (this.isScreenMedium()) {
-					if (!this.workContentGDS.is(':visible')) {
-						this.alma.fadeOut();
-						this.growit.fadeOut();
-						setTimeout(function () {
-							that.workContentGDS.show();
-						}, 500);
-					} else {
-						this.workContentGDS.fadeOut();
-						setTimeout(function () {
-							that.alma.fadeIn();
-							that.growit.fadeIn();
-						}, 500);
-					}
-				}
-			}
-		}, {
-			key: "hideOneAndThree",
-			value: function hideOneAndThree() {
-				var that = this;
-				if (this.isScreenMedium()) {
-					if (!this.workContentAlma.is(':visible')) {
-						this.gds.fadeOut();
-						this.growit.fadeOut();
-						setTimeout(function () {
-							that.workContentAlma.show();
-						}, 500);
-					} else {
-						this.workContentAlma.fadeOut();
-						setTimeout(function () {
-							that.gds.fadeIn();
-							that.growit.fadeIn();
-						}, 500);
-					}
-				}
-			}
-		}, {
-			key: "hideOneAndTwo",
-			value: function hideOneAndTwo() {
-				var that = this;
-				if (this.isScreenMedium()) {
-					if (!this.workContentGrowit.is(':visible')) {
-						this.gds.fadeOut();
-						this.alma.fadeOut();
-						setTimeout(function () {
-							that.workContentGrowit.show();
-						}, 500);
-					} else {
-						this.workContentGrowit.fadeOut();
-						setTimeout(function () {
-							that.gds.fadeIn();
-							that.alma.fadeIn();
-						}, 500);
-					}
-				}
-			}
-		}, {
-			key: "isScreenMedium",
-			value: function isScreenMedium() {
-				if ((0, _jquery2.default)(window).width() > 799) {
-					return true;
-				}
-			}
-		}]);
-
-		return Work;
-	}();
-
-	exports.default = Work;
-
-/***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -11788,7 +11666,7 @@
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _modal = __webpack_require__(10);
+	var _modal = __webpack_require__(9);
 
 	var _modal2 = _interopRequireDefault(_modal);
 
@@ -11848,7 +11726,7 @@
 	exports.default = ContactForm;
 
 /***/ },
-/* 10 */
+/* 9 */
 /***/ function(module, exports) {
 
 	'use strict';
