@@ -6,7 +6,7 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 class StickyHeader {
 	constructor() {
 		this.siteHeader = $(".site-header");
-		this.headerTriggerEl = $(".jumbo__title");
+		this.headerTriggerEl = $(".work-experience-trigger");
 		this.siteLogo = $(".site-header__logo");
 		this.createHeaderWaypoint();
 
@@ -34,7 +34,8 @@ class StickyHeader {
 					that.siteHeader.removeClass("site-header--dark");
 					that.siteLogo.removeClass("site-header__logo--smaller");
 				}
-			}
+			},
+			offset: "30%"
 		});
 	}
 
