@@ -1,0 +1,30 @@
+.headline {
+
+	font-weight: 500;
+	margin: 0 0 1.5rem 0;
+	font-size: 3rem;
+
+	&--centered {
+		text-align: center;
+	}
+
+	&--gold {
+		color: $gold;
+	}
+
+	&--no-b-margin {
+		margin-bottom: 0;
+	}
+
+	&--top-margin {
+		margin-top: 1rem;
+	}
+
+	&--margin-b {
+		margin-bottom: 8rem;
+	}
+
+	&--margin-b-small {
+		margin-bottom: 4rem;
+	}
+}
