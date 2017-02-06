@@ -11207,7 +11207,7 @@
 			_classCallCheck(this, StickyHeader);
 
 			this.siteHeader = (0, _jquery2.default)(".site-header");
-			this.headerTriggerEl = (0, _jquery2.default)(".jumbo__title");
+			this.headerTriggerEl = (0, _jquery2.default)(".work-experience-trigger");
 			this.siteLogo = (0, _jquery2.default)(".site-header__logo");
 			this.createHeaderWaypoint();
 
@@ -11238,7 +11238,8 @@
 							that.siteHeader.removeClass("site-header--dark");
 							that.siteLogo.removeClass("site-header__logo--smaller");
 						}
-					}
+					},
+					offset: "30%"
 				});
 			}
 		}, {
