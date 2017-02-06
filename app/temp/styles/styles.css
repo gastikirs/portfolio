@@ -509,7 +509,7 @@ img{
 
 .site-header__logo {
   position: absolute;
-  background-color: #2f5572;
+  background-color: transparent;
   padding: 25px 36px;
   top: 0;
   left: 50%;
@@ -517,18 +517,16 @@ img{
           transform: translateX(-50%) scale(.8);
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
-  -webkit-transition: -webkit-transform .3s ease-out;
-  transition: -webkit-transform .3s ease-out;
-  transition: transform .3s ease-out;
-  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 @media (min-width: 848px) {
 
   .site-header__logo {
     left: auto;
-    -webkit-transform: translateX(0) scale(1);
-            transform: translateX(0) scale(1);
+    -webkit-transform: translateX(0) translateY(-25%) scale(1.5);
+            transform: translateX(0) translateY(-25%) scale(1.5);
   }
 
   .site-header__logo--smaller {
@@ -735,8 +733,8 @@ img{
   width: 100%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
   padding-top: 2rem;
 }
 
@@ -745,6 +743,13 @@ img{
   .jumbo__text-content {
     padding-top: 1rem;
   }
+}
+
+.jumbo__line {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: dashed 1px;
 }
 
 .jumbo__title {
@@ -791,6 +796,18 @@ img{
 
 .jumbo__image{
   display: block;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.jumbo__button {
+  border: 1px solid white;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.jumbo__button:hover {
+  color: #FFDF00;
 }
 
 /*@import 'modules/_btn';*/
